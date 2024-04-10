@@ -27,7 +27,7 @@ set(CMAKE_MODULE_PATH ${PROJECT_SOURCE_DIR}/cmake)
 
 include(FindThreads)
 include(FindProtobuf)
-include(SetupBrpc)
+include(thirdparty/brpc/SetupBrpc)
 
 if ((NOT BRPC_INCLUDE_PATH) OR (NOT BRPC_LIB))
     message(FATAL_ERROR "Fail to find brpc")
